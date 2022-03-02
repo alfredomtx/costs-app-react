@@ -63,8 +63,15 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 246,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "123",
+          "": "a",
+          "id": "9e1f5cd7-4ae5-48d0-ac64-4671ee277268"
+        }
+      ],
       "id": 7
     },
     {
@@ -88,6 +95,28 @@
       "cost": 0,
       "services": [],
       "id": 9
+    },
+    {
+      "name": "teste heroku",
+      "budget": "999",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 10
+    },
+    {
+      "name": "teste !",
+      "budget": "123",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 11
     }
   ],
   "categories": [

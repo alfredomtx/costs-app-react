@@ -20,7 +20,7 @@ import {Row} from 'react-bootstrap'
 
 function Projects() {
 
-	const [projectsList, setProjectsList] = useState([]);
+	const [projectsList, setProjectsList] = useState([] | null);
 	const [removeLoading, setRemoveLoading] = useState(false);
 	const [projectMessage, setProjectMessage] = useState({ title: "", message: "", type: "" });
 
@@ -39,7 +39,7 @@ function Projects() {
 
 	useEffect(() => {
 		getProjectsList();
-	}, [])
+	}, [projectsList])
 
 	function getProjectsList() {
 		// setTimeout(() => {

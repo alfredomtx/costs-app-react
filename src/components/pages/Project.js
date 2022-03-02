@@ -72,7 +72,7 @@ function Project() {
 		}
 
 		fetch(`${JSON_API}/projects/${project.id}`, {
-			method: "PATCH",
+			method: "UPDATE",
 			headers: { 'Content-Type': "application/json" },
 			body: JSON.stringify(project)
 		})
@@ -118,9 +118,8 @@ function Project() {
 		project.cost = newCost;
 
 		// update project
-
 		fetch(`${JSON_API}/projects/${project.id}`, {
-			method: "PATCH",
+			method: "UPDATE",
 			headers: { 'Content-Type': "application/json" },
 			body: JSON.stringify(project)
 		})
@@ -149,7 +148,7 @@ function Project() {
 		projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(serviceCost);
 
 		fetch(`${JSON_API}/projects/${project.id}`, {
-			method: "PATCH",
+			method: "UPDATE",
 			headers: { 'Content-Type': "application/json" },
 			body: JSON.stringify(projectUpdated)
 		})
