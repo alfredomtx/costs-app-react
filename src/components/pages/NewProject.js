@@ -1,3 +1,5 @@
+import { JSON_API } from '../helper/Constants'
+
 import {useNavigate} from 'react-router-dom'
 
 import styles from './NewProject.module.css'
@@ -12,7 +14,7 @@ function NewProject(){
         project.cost = 0;
         project.services = [];
 
-        fetch("http://localhost:5000/projects", {
+        fetch(`${JSON_API}/projects`, {
             method: "POST",
             headers: {
                 'Content-Type': "application/json"

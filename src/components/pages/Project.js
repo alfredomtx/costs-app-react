@@ -119,7 +119,7 @@ function Project() {
 
 		// update project
 
-		fetch(`http://localhost:5000/projects/${project.id}`, {
+		fetch(`${JSON_API}/projects/${project.id}`, {
 			method: "PATCH",
 			headers: { 'Content-Type': "application/json" },
 			body: JSON.stringify(project)
@@ -148,7 +148,7 @@ function Project() {
 		projectUpdated.services = servicesUpdated;
 		projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(serviceCost);
 
-		fetch(`http://localhost:5000/projects/${project.id}`, {
+		fetch(`${JSON_API}/projects/${project.id}`, {
 			method: "PATCH",
 			headers: { 'Content-Type': "application/json" },
 			body: JSON.stringify(projectUpdated)
