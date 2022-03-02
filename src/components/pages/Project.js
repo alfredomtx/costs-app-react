@@ -1,11 +1,10 @@
-import { parse, v4 as uuidv4 } from 'uuid'
+import { v4 as uuidv4 } from 'uuid'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 import styles from './Project.module.css'
-import cardStyles from './Projects.module.css'
 
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -14,11 +13,10 @@ import Loading from '../layout/Loading';
 // import Container from '../layout/Container';
 import Switch from '../helper/Switch';
 import ProjectForm from '../project/ProjectForm';
-import ToastMessage from '../layout/ToastMessage';
 import ServiceForm from '../service/ServiceForm';
 import ServiceCard from '../service/ServiceCard';
 
-import {Row, Container, Col} from 'react-bootstrap'
+import {Row} from 'react-bootstrap'
 
 
 

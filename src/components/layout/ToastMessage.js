@@ -4,8 +4,6 @@ import {useState, useEffect} from 'react'
 import styles from './ToastMessage.module.css'
 
 
-import {useRef} from 'react'
-
 function ToastMessage({title, message, type}) {
     const [show, setShow] = useState(false);
 

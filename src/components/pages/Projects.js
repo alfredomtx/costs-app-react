@@ -8,12 +8,11 @@ import LinkButton from "../layout/LinkButton";
 import ProjectCard from "../project/ProjectCard";
 import { useState, useEffect } from 'react';
 import Loading from "../layout/Loading";
-import LoadingCardSkeleton from "../layout/LoadingCardSkeleton";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import {Row, Container} from 'react-bootstrap'
+import {Row} from 'react-bootstrap'
 
 
 

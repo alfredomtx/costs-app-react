@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 import styles from '../project/ProjectForm.module.css'
 
-import Input from '../form/Input'
 import SubmitButton from '../form/SubmitButton'
 import { CInputGroup, CInputGroupText, CFormInput, CFormLabel, CFormTextarea } from '@coreui/react'
 

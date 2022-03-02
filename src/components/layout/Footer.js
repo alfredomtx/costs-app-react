@@ -1,5 +1,5 @@
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
-import {Navbar, Container, Col} from 'react-bootstrap'
+import {Navbar, Col} from 'react-bootstrap'
 import styles from './Footer.module.css'
 
 function Footer(){

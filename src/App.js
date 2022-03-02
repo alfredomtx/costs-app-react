@@ -7,7 +7,7 @@ import Contact from './components/pages/Contact';
 import NewProject from './components/pages/NewProject';
 import Projects from './components/pages/Projects';
 
-import {Row, Container, Col} from 'react-bootstrap'
+import {Col} from 'react-bootstrap'
 
 import Project from './components/pages/Project';
 

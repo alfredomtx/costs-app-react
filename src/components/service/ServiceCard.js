@@ -2,7 +2,7 @@ import styles from '../project/ProjectCard.module.css'
 
 import {Card, ListGroup, ListGroupItem} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import {BsPencil, BsFillTrashFill} from 'react-icons/bs'
+import {BsFillTrashFill} from 'react-icons/bs'
 
 
 function ServiceCard({service, handleRemove}){
