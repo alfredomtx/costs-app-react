@@ -1,3 +1,5 @@
+import { JSON_API } from '../helper/Constants'
+
 import ToastMessage from "../layout/ToastMessage"
 // import Container from "../layout/Container"
 
@@ -41,7 +43,7 @@ function Projects() {
 
 	function getProjectsList() {
 		// setTimeout(() => {
-		fetch("http://localhost:5000/projects", {
+		fetch(`${JSON_API}/projects`, {
 			method: "GET",
 			headers: {
 				'Content-Type': "application/json"
@@ -61,7 +63,7 @@ function Projects() {
 	}
 
 	function removeProject(id) {
-		fetch(`http://localhost:5000/projects/${id}`, {
+		fetch(`${JSON_API}/projects/${id}`, {
 			method: "DELETE",
 			headers: {
 				'Content-Type': "application/json"

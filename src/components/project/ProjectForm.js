@@ -1,3 +1,6 @@
+import { JSON_API } from '../helper/Constants'
+
+
 import SubmitButton from '../form/SubmitButton'
 import styles from './ProjectForm.module.css'
 
@@ -16,7 +19,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
 
 	useEffect(() => {
 
-		fetch("http://localhost:5000/categories", {
+		fetch(`${JSON_API}/categories`, {
 			method: "GET",
 			headers: {
 				'Content-Type': "application/json"

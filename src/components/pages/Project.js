@@ -1,3 +1,4 @@
+import { JSON_API } from '../helper/Constants'
 import { v4 as uuidv4 } from 'uuid'
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -32,7 +33,7 @@ function Project() {
 
 	useEffect(() => {
 		// setTimeout(() => {
-		fetch(`http://localhost:5000/projects/${id}`, {
+		fetch(`${JSON_API}/projects/${id}`, {
 			method: "GET",
 			headers: { 'Content-Type': "application/json" }
 		})
@@ -70,7 +71,7 @@ function Project() {
 			return;
 		}
 
-		fetch(`http://localhost:5000/projects/${project.id}`, {
+		fetch(`${JSON_API}/projects/${project.id}`, {
 			method: "PATCH",
 			headers: { 'Content-Type': "application/json" },
 			body: JSON.stringify(project)
