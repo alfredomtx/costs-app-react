@@ -19,8 +19,6 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
 
 	useEffect(() => {
 
-		console.log("aaa " + JSON_API);
-
 		fetch(`${JSON_API}/categories`, {
 			method: "GET",
 			headers: {
