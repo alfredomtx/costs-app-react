@@ -20,7 +20,7 @@ import {Row} from 'react-bootstrap'
 
 function Projects() {
 
-	const [projectsList, setProjectsList] = useState([] | null);
+	const [projectsList, setProjectsList] = useState([]);
 	const [removeLoading, setRemoveLoading] = useState(false);
 	const [projectMessage, setProjectMessage] = useState({ title: "", message: "", type: "" });
 
@@ -39,7 +39,7 @@ function Projects() {
 
 	useEffect(() => {
 		getProjectsList();
-	}, [projectsList])
+	}, [])
 
 	function getProjectsList() {
 		// setTimeout(() => {
@@ -83,7 +83,7 @@ function Projects() {
 
 	return (
 		<div>
-			<ToastContainer pauseOnFocusLoss={false} />
+			<ToastContainer pauseOnFocusLoss={false} position="bottom-right" autoClose={3000}/>
 
 			<div className={styles.titleContainer}>
 				<h1>Meus Projetos</h1>

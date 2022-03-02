@@ -175,7 +175,7 @@ function Project() {
 			) : (
 				<div className={styles.projectDetails}>
 
-					<ToastContainer pauseOnFocusLoss={false} />
+					<ToastContainer pauseOnFocusLoss={false} position="bottom-right" autoClose={3000}/>
 
 						<div className={styles.detailsContainer}>
 							<h1>Projeto: {project.name}</h1>
