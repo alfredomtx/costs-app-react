@@ -21,8 +21,8 @@ function Navibar(){
                 <Nav className="me" >
                     <Link className="nav-link" to="/">Home</Link>
                     <Link className="nav-link" to="/projects">Projetos</Link>
-                    <Link className="nav-link" to="/company">Empresa</Link>
-                    <Link className="nav-link" to="/contact">Contato</Link>
+                    {/* <Link className="nav-link" to="/company">Empresa</Link> */}
+                    {/* <Link className="nav-link" to="/contact">Contato</Link> */}
                 </Nav>
             </Navbar>
         </nav>
